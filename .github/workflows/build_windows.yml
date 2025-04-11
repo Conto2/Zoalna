@@ -13,10 +13,10 @@ jobs:
       - name: Checkout Source
         uses: actions/checkout@v3
 
-      - name: Setup Flutter
+      - name: Setup Flutter with Dart 3.6.0
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.19.0'
+          flutter-version: '3.19.2' # تدعم Dart 3.6.0
 
       - name: Enable Windows Desktop
         run: flutter config --enable-windows-desktop
